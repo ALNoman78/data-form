@@ -24,10 +24,11 @@ const StateForm = () => {
 
     const handleFormSubmit = e => {
         e.preventDefault()
+        //password validation 
         if (password.length < 8) {
             setError('password must be 8 char longer')
         } else {
-            setError()
+            setError('');
             console.log(name, email, password)
         }
         console.log(name)
@@ -47,7 +48,7 @@ const StateForm = () => {
                 <br />
                 <input
                     onChange={handlePassword}
-                    className=' p-3 border border-black m-3 rounded-lg' type="password" name="" id="" value={password} placeholder='Password' />
+                    className=' p-3 border border-black m-3 rounded-lg' type="password" name="" id="" value={password} placeholder='Password' required />
                 <br />
                 <input className='btn btn-success text-white ml-3' type="submit" value="Submit" />
                 {
