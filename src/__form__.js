@@ -6,5 +6,9 @@
  * 3. control element : one object in a state holding input field value.
  *
  * 4. uncontrolled element : useRef to create a reference to the element and access value by using like: nameRef.current.value
+ * 
+ * 5. use hook to handle states and error .example react hooks form
+ * 
+ * 6. Reuseable components .
  *
  */
