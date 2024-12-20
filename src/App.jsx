@@ -1,15 +1,20 @@
 import reactLogo from './assets/react.svg'
-import HookForm from './components/HookForm/HookForm'
-import RefForm from './components/RefForm/RefForm'
-import SingleForm from './components/SingleForm/SingleForm'
-import StateForm from './components/StateForm/StateForm'
-import PracticeForm from './components/Practice/Practice'
+import Header from './components/Header/Header'
+// import HookForm from './components/HookForm/HookForm'
+// import RefForm from './components/RefForm/RefForm'
+// import SingleForm from './components/SingleForm/SingleForm'
+// import StateForm from './components/StateForm/StateForm'
+// import PracticeForm from './components/Practice/Practice'
 import ReuseableForm from './components/ReuseableForm/ReuseableForm'
 
 function App() {
-  const handleSubmit = e => {
-    e.preventDefault()
-    console.log(e.target.name.value)
+
+  const handleSignUpSubmit = data => {
+    console.log(data)
+  }
+
+  const handleUpdateSubmit = data => {
+    console.log(data)
   }
 
   return (
@@ -20,8 +25,9 @@ function App() {
       {/* <RefForm></RefForm> */}
       {/* <PracticeForm></PracticeForm> */}
       {/* <HookForm></HookForm> */}
-      <ReuseableForm titleName={'Sign Up'}></ReuseableForm>
-      <ReuseableForm titleName={'Log In'} submitBtnText={'Update'}></ReuseableForm>
+      {/* <ReuseableForm titleName={'Sign Up'} handleSubmit={handleSignUpSubmit}></ReuseableForm>
+      <ReuseableForm titleName={'Log In'} submitBtnText={'Update'} handleSubmit={handleUpdateSubmit}></ReuseableForm> */}
+      <Header></Header>
     </>
   )
 }
