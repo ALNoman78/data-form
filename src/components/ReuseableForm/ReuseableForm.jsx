@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 const ReuseableForm = ({ titleName, handleSubmit, submitBtnText = 'Submit' }) => {
     const nameRef = useRef('')
+    
     // useEffect(() => {
     //     nameRef.current.focus()
     // }, [])
