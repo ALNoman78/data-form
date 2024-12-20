@@ -12,6 +12,7 @@ const HookForm = () => {
     // const passwordState = useInputValue('')
     const passwordHook = useNewState('')
     const passwordRef = useRef('')
+    //error handling code execute
     const [error, setError] = useState()
 
     useEffect(() => {

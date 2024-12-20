@@ -75,8 +75,18 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-            <ReuseableForm titleName={'Sign UP'} handleSubmit={handleSubmitForm}></ReuseableForm>
-            <ReuseableForm titleName={'Log in'} submitBtnText={'Update Information'} handleSubmit={handleUpdateForm}></ReuseableForm>
+            <ReuseableForm titleName={'Sign UP'} handleSubmit={handleSubmitForm}>
+                <div>
+                    <h2>Sign UP </h2>
+                    <p>Please sign up right now</p>
+                </div>
+            </ReuseableForm>
+            <ReuseableForm titleName={'Log in'} submitBtnText={'Update Information'} handleSubmit={handleUpdateForm}>
+                <div>
+                    <h2>Update profile</h2>
+                    <p>Always keep your profile update</p>
+                </div>
+            </ReuseableForm>
         </div>
     )
 }
