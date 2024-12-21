@@ -4,12 +4,13 @@ import MySelf from '../MySelf/MySelf'
 import Brother from '../Brother/Brother'
 import Sister from '../Sister/Sister'
 
-const FormOne = () => {
+const FormOne = ({prop}) => {
+    // console.log(prop)
     return (
         <div>
             <h2 className='text-center text-lg'>FormOne</h2>
             <section className='flex'>
-                <MySelf></MySelf>
+                <MySelf data={prop}></MySelf>
                 <Brother></Brother>
                 <Sister></Sister>
             </section>

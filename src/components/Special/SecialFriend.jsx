@@ -1,9 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const SecialFriend = props => {
+const SecialFriend = ({assets}) => {
     return (
-        <div>SecialFriend</div>
+        <div>
+            <h2>Special Friend</h2>
+            <p className='text-red-400'>Assets  : {assets}</p>
+        </div>
     )
 }
 
