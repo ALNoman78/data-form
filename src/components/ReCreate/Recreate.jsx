@@ -10,7 +10,7 @@ const Recreate = ({children , submitBtnText = 'Submit ' , handleSubmit}) => {
             email : e.target.email.value,
             password : e.target.password.value
         }
-        handleSubmit(data)
+        handleSubmit(data) ; // function(parameter)
     }
     return (
         <div className='text-center md:w-3/12 mx-auto p-4 m-2'>
