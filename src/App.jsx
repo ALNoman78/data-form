@@ -1,5 +1,6 @@
 import reactLogo from './assets/react.svg'
 import Header from './components/Header/Header'
+import MainForm from './components/MainForm/MainForm'
 import Recreate from './components/ReCreate/Recreate'
 // import HookForm from './components/HookForm/HookForm'
 // import RefForm from './components/RefForm/RefForm'
@@ -40,6 +41,7 @@ function App() {
           <h2>Update Information From</h2>
         </div>
       </Recreate> */}
+      <MainForm></MainForm>
     </>
   )
 }
