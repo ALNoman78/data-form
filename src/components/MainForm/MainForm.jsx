@@ -13,8 +13,9 @@ const MainForm = () => {
     const assets = 'Diamond';
     return (
         <div className='mainForm'>
-            <h2 className='text-center text-2xl font-bold text-emerald-700 my-2'>Main Form</h2>
-            <MoneyContext.Provider value={[money , setMoney]}>
+            <h2 className='text-center text-2xl font-bold text-emerald-700 my-2'>Main Form </h2>
+            <p className='text-xl font-bold text-red-600 text-center'>Money : {money}</p>
+            <MoneyContext.Provider value={[money, setMoney]}>
                 <AssetContext.Provider value='gold'>
                     <section className='flex items-center justify-center'>
                         <FormOne prop={assets}></FormOne>

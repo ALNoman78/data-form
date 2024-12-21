@@ -14,7 +14,7 @@ const FormThree = props => {
                 <Cousin name={'Man Two'}></Cousin>
             </section>
             <p>Money : {money} </p>
-            <p>Function : {setMoney}</p>
+            <button onClick={() => setMoney(money + 1000)}>Add Money</button>
         </div>
     )
 }
