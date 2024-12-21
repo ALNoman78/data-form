@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import Cousin from '../Cousin/Cousin'
+import { AssetContext, MoneyContext } from '../MainForm/MainForm'
 
 const FormThree = props => {
+    const assets = useContext(AssetContext);
+    const [money, setMoney] = useContext(MoneyContext)
     return (
         <div>
             <h2>FormThree</h2>
@@ -10,6 +13,8 @@ const FormThree = props => {
                 <Cousin name={'Man one'}></Cousin>
                 <Cousin name={'Man Two'}></Cousin>
             </section>
+            <p>Money : {money} </p>
+            <p>Function : {setMoney}</p>
         </div>
     )
 }

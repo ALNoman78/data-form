@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SecialFriend from '../Special/SecialFriend'
+import Friend from '../Friend/Friend'
 
 const Cousin = ({name , asset}) => {
     return (
@@ -9,6 +10,7 @@ const Cousin = ({name , asset}) => {
             <p>{name}</p>
             <section>
                 {asset && <SecialFriend assets={asset}></SecialFriend>}
+                {name === 'Man Two' && <Friend></Friend>}
             </section>
         </div>
     )
